@@ -5,8 +5,8 @@ import ToDo from '../ToDo/ToDo';
 class ToDoList extends React.Component {
     render = () =>
         <div>
-            <p class="lead">To Do List:</p>
-            <ul class="list-group">
+            <p className="lead">To Do List:</p>
+            <ul className="list-group">
                 { this.props.toDoList.map(todo => <ToDo key={todo.id} todo={todo} />) }
             </ul>
             
